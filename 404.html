@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./bible-compass-icon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#090d16" />
+    <link rel="manifest" href="./manifest.json" />
+    <title>hyFen8ed GPS — The Customizable Life Visualizer</title>
+    <!-- Tailwind via CDN guarantees 100% reliable styling without PostCSS build hurdles -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              brand: {
+                dark: '#080b11',
+                card: '#101522',
+                cardLight: '#161e30',
+                border: '#1e293b',
+                gold: '#eab308',
+                accent: '#38bdf8'
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <script type="module" crossorigin src="/hyfen8ed-gps/assets/index-JwrEzRDC.js"></script>
+  </head>
+  <body class="bg-[#080b11] text-slate-100 antialiased min-h-screen selection:bg-amber-500 selection:text-black">
+    <div id="root"></div>
+  </body>
+</html>
