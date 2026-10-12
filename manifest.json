@@ -1,0 +1,25 @@
+{
+  "short_name": "hyFen8ed GPS",
+  "name": "hyFen8ed GPS: The Customizable Life Visualizer",
+  "icons": [
+    {
+      "src": "bible-compass-icon.svg",
+      "type": "image/svg+xml",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/hyfen8ed-gps/",
+  "background_color": "#090d16",
+  "theme_color": "#090d16",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "share_target": {
+    "action": "/hyfen8ed-gps/?share=true",
+    "method": "GET",
+    "params": {
+      "title": "title",
+      "text": "text",
+      "url": "url"
+    }
+  }
+}
