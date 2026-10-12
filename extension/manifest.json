@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "hyFen8ed GPS: Quick Capture",
+  "version": "1.0.0",
+  "description": "Send Facebook Reels, videos, quotes, and web articles straight to your hyFen8ed GPS Knowledge Vault with multimodal AI extraction.",
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Capture to hyFen8ed GPS"
+  },
+  "permissions": [
+    "activeTab",
+    "storage"
+  ]
+}
