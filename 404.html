@@ -4,33 +4,48 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="./bible-compass-icon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#090d16" />
+    <meta name="theme-color" content="#030712" />
     <link rel="manifest" href="./manifest.json" />
     <title>hyFen8ed GPS — The Customizable Life Visualizer</title>
-    <!-- Tailwind via CDN guarantees 100% reliable styling without PostCSS build hurdles -->
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Standalone Tailwind engine loaded from public folder -->
+    <script src="/hyfen8ed-gps/tailwind.js"></script>
     <script>
       tailwind.config = {
         darkMode: 'class',
         theme: {
           extend: {
+            fontFamily: {
+              sans: ['"Plus Jakarta Sans"', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
+              mono: ['"JetBrains Mono"', 'monospace'],
+            },
             colors: {
-              brand: {
-                dark: '#080b11',
-                card: '#101522',
-                cardLight: '#161e30',
-                border: '#1e293b',
-                gold: '#eab308',
-                accent: '#38bdf8'
+              obsidian: {
+                950: '#030712',
+                900: '#080d1a',
+                850: '#0c1322',
+                800: '#111a2e',
+                700: '#1e293b'
+              },
+              f8gold: {
+                DEFAULT: '#f59e0b',
+                glow: 'rgba(245, 158, 11, 0.15)',
+                dark: '#b45309'
+              },
+              f8cyan: {
+                DEFAULT: '#06b6d4',
+                glow: 'rgba(6, 182, 212, 0.15)'
               }
             }
           }
         }
       }
     </script>
-    <script type="module" crossorigin src="/hyfen8ed-gps/assets/index-JwrEzRDC.js"></script>
+    <script type="module" crossorigin src="/hyfen8ed-gps/assets/index-Du5bYg-B.js"></script>
   </head>
-  <body class="bg-[#080b11] text-slate-100 antialiased min-h-screen selection:bg-amber-500 selection:text-black">
+  <body class="bg-[#030712] text-slate-100 antialiased min-h-screen selection:bg-amber-500 selection:text-black">
     <div id="root"></div>
   </body>
 </html>
